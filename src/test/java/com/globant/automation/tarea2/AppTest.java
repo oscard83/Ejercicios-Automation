@@ -33,7 +33,6 @@ public class AppTest extends TestCase
 	private SelectRoomPage selectRoomPage = null;
 	private SelectFlightPackage selectFlightPackage = null;
 	private PackagePreviewPage packagePreviewPage = null;
-	private ConfirmationPackagePage confirmationPackagePage = null;
 	private SearchHotelPage searchHotelPage = null;
 	private SearchHotelResultsPage searchHotelResultsPage = null;
 	private SearchCruisesPage searchCruisesPage = null;
@@ -51,7 +50,7 @@ public class AppTest extends TestCase
 	 * 
 	 * * */
 		
-	//@Test
+	@Test
 	public void exercise1() {
 		driver.get(URL);
 		searchPage = new SearchHotelFlightPage(driver);
@@ -116,7 +115,7 @@ public class AppTest extends TestCase
 	 * 
 	 * * */
 	
-	//@Test
+	@Test
 	public void exercise3() {
 		driver.get(URL);
 		searchHotelPage = new SearchHotelPage(driver);
@@ -133,7 +132,7 @@ public class AppTest extends TestCase
 	 * 
 	 * * */
 	
-	//@Test
+	@Test
 	public void exercise4() {
 		driver.get(URL);
 		searchPage = new SearchHotelFlightPage(driver);
@@ -147,7 +146,7 @@ public class AppTest extends TestCase
 	 * 
 	 * * */
 	
-	//@Test
+	@Test
 	public void exercise5() {
 		driver.get(URL);
 		searchCruisesPage = new SearchCruisesPage(driver);
@@ -161,7 +160,7 @@ public class AppTest extends TestCase
 		searchCruisesResultsPage.selectOptionWithHighestDiscount();
 	}
 	
-	//@AfterSuite
+	@AfterSuite
 	public void cerrarSuite(){
 		if(driver!=null)
 			driver.close();
